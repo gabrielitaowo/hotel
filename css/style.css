@@ -8344,7 +8344,7 @@ body.landing-page {
 }
 
 .landing-page .navbar-default.navbar-scroll {
-  background-color: #1B1B1B;
+  background-color: #0D0D0D;
   border-color: #000;
   padding: 15px 0;
 }
@@ -10458,6 +10458,17 @@ body.md-skin {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 .actual {
   color: #009393 !important;
 }
@@ -10564,9 +10575,6 @@ body.md-skin {
   color: #fff;
   transform: none;
 }
-
-
-
 
 
 
@@ -10764,39 +10772,6 @@ body.md-skin {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .icon-size {
   font-size: 140px !important;
   margin: 20px 0;
@@ -10863,6 +10838,10 @@ body.md-skin {
   display: block;
 }
 
+.galeria img:hover {
+  transform: scale(1.0075);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
 .ubicacion-contenido {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -11062,7 +11041,7 @@ body.md-skin {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
   max-width: 1200px;
-  margin: 12px 0;
+  margin: 40px 0 12px 0;
 }
 
 .tarjeta-caracteristicas {
@@ -11156,14 +11135,6 @@ body.md-skin {
 
 
 
-
-
-
-
-
-
-
-
 .divider {
   display: flex;
   align-items: center;
@@ -11186,3 +11157,5 @@ body.md-skin {
 }
 
 /* azulinho total 009393 : hover 008282 : border 008493
+
+Colonial 001C55 - 001845 - 002060
