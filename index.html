@@ -12,6 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- Animation CSS -->
     <link href="css/animate.css" rel="stylesheet">
@@ -195,8 +196,21 @@
                 <p class="p-text-landing">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. </p>
 
                 <div class="card col-lg-4">
-                    <img class="img-responsive" src="img/hotel/habitacion-1.png" alt="Deluxe Room">
-                    <div class="card-body">
+                    <img class="img-responsive" src="img/hotel/habitacion-1.png" alt="Habitacion simple">
+                    <div class="card-body" onclick='openModal({
+                            titulo: "Habitación Simple",
+                            precio: "$210 / Noche",
+                            descripcion: "1 cama individual o matrimonial. Ideal para viajeros individuales o parejas.",
+                            detalles: [
+                                { icon: "fa-solid fa-ruler-combined", texto: "Tamaño: 20 m²" },
+                                { icon: "fa-solid fa-bed", texto: "1 cama King" },
+                                { icon: "fa-solid fa-user", texto: "2 adultos" },
+                                { icon: "fa-solid fa-building", texto: "Vista a la ciudad" },
+                                { icon: "fa-solid fa-smoking-ban", texto: "No fumadores" },
+                                { icon: "fa-solid fa-mug-saucer", texto: "Desayuno incluido" }
+                            ],
+                            imagen: "img/hotel/habitacion-1.png"
+                            })'>
                         <h2><strong>Habitacion simple</strong></h2>
                         <p>1 cama individual o matrimonial. Ideal para viajeros individuales o parejas.</p>
                         <div class="info-habitacion">
@@ -214,8 +228,21 @@
                 </div>
 
                 <div class="card col-lg-4">
-                    <img class="img-responsive" src="img/hotel/habitacion-1.png" alt="Deluxe Room">
-                    <div class="card-body">
+                    <img class="img-responsive" src="img/hotel/habitacion-1.png" alt="Habitacion doble">
+                    <div class="card-body" onclick='openModal({
+                            titulo: "Habitación Doble",
+                            precio: "$320 / Noche",
+                            descripcion: "2 camas matrimoniales o individuales. Perfecta para amigos o familias pequeñas.",
+                            detalles: [
+                                { icon: "fa-solid fa-ruler-combined", texto: "Tamaño: 28 m²" },
+                                { icon: "fa-solid fa-bed", texto: "2 camas Queen" },
+                                { icon: "fa-solid fa-user", texto: "Hasta 4 personas" },
+                                { icon: "fa-solid fa-building", texto: "Vista al jardín" },
+                                { icon: "fa-solid fa-smoking-ban", texto: "No fumadores" },
+                                { icon: "fa-solid fa-mug-saucer", texto: "Desayuno incluido" }
+                            ],
+                            imagen: "img/hotel/habitacion-1.png"
+                            })'>
                         <h2><strong>Habitacion doble</strong></h2>
                         <p>2 camas matrimoniales o individuales. Perfecta para amigos o familias pequeñas.</p>
                         <div class="info-habitacion">
@@ -233,8 +260,21 @@
                 </div>
 
                 <div class="card col-lg-4">
-                    <img class="img-responsive" src="img/hotel/habitacion-1.png" alt="Deluxe Room">
-                    <div class="card-body">
+                    <img class="img-responsive" src="img/hotel/habitacion-1.png" alt="Habitacion triple">
+                    <div class="card-body" onclick='openModal({
+                                titulo: "Habitación Triple",
+                                precio: "$420 / Noche",
+                                descripcion: "3 camas o combinaciones familiares. Mayor espacio, ideal para grupos.",
+                                detalles: [
+                                    { icon: "fa-solid fa-ruler-combined", texto: "Tamaño: 35 m²" },
+                                    { icon: "fa-solid fa-bed", texto: "3 camas individuales o 1 King + 1 Queen",},
+                                    { icon: "fa-solid fa-user", texto: "Hasta 5 personas"},
+                                    { icon: "fa-solid fa-building", texto: "Vista panorámica"},
+                                    { icon: "fa-solid fa-smoking-ban", texto: "No fumadores"},
+                                    { icon: "fa-solid fa-mug-saucer", texto: "Desayuno incluido"},
+                                ],
+                                imagen: "img/hotel/habitacion-1.png"
+                            })'>
                         <h2><strong>Habitacion triple</strong></h2>
                         <p>3 camas o combinaciones familiares. Mayor espacio, ideal para grupos.</p>
                         <div class="info-habitacion">
@@ -246,6 +286,56 @@
                                 <div class="servicio-hotel"><i class="fa fa-tv"></i> TV</div>
                                 <div class="servicio-hotel"><i class="fa fa-bath"></i> Baño</div>
                                 <div class="servicio-hotel"><i class="fa fa-wifi"></i> A/C</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div id="myModal" class="modal-habitacion">
+                    <div class="modal-habitacion-content">
+                        <span class="close-habitacion" onclick="closeModal()">&times;</span>
+                        <div class="modal-body-habitacion">
+                            <!-- Columna izquierda: información -->
+                            <div class="modal-info-habitacion">
+                                <p class="precio-habitacion">Desde: $210 / Noche</p>
+                                <h2 class="titulo-habitacion font-icon">Habitación Standard</h2>
+                                <p class="descripcion-habitacion">
+                                    Acogedora y moderna, esta habitación ofrece servicios esenciales para una estancia
+                                    cómoda.
+                                    Perfecta para viajeros solos o parejas que buscan relajación.
+                                </p>
+                                <div class="detalles-habitacion">
+                                    <div class="detalle-item">
+                                        <i class="fa-solid fa-ruler-combined"></i>
+                                        <span>Tamaño: 20 m²</span>
+                                    </div>
+                                    <div class="detalle-item">
+                                        <i class="fa-solid fa-bed"></i>
+                                        <span>1 cama King</span>
+                                    </div>
+                                    <div class="detalle-item">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span>2 adultos</span>
+                                    </div>
+                                    <div class="detalle-item">
+                                        <i class="fa-solid fa-building"></i>
+                                        <span>Vista a la ciudad</span>
+                                    </div>
+                                    <div class="detalle-item">
+                                        <i class="fa-solid fa-smoking-ban"></i>
+                                        <span>No fumadores</span>
+                                    </div>
+                                    <div class="detalle-item">
+                                        <i class="fa-solid fa-mug-saucer"></i>
+                                        <span>Desayuno incluido</span>
+                                    </div>
+                                </div>
+                                <button class="btn-reservar-habitacion">Reservar ahora</button>
+                            </div>
+                            <!-- Columna derecha: imagen -->
+                            <div class="modal-img-habitacion">
+                                <img src="img/hotel/habitacion-1.png" alt="Habitación Standard">
                             </div>
                         </div>
                     </div>
@@ -369,6 +459,31 @@
         </div>
     </section>
 
+    <section class="features">
+        <div class="container">
+            <div class="row">
+                <div class="galeria">
+                    <img src="img/hotel/colonial-1.png" alt="Foto 1">
+                    <img src="img/hotel/colonial-2.png" alt="Foto 2">
+                    <img src="img/hotel/colonial-3.png" alt="Foto 3">
+                    <img src="img/hotel/colonial-4.png" alt="Foto 4">
+                    <img src="img/hotel/colonial-5.png" alt="Foto 5">
+                    <img src="img/hotel/colonial-6.png" alt="Foto 6">
+                    <img src="img/hotel/colonial-7.png" alt="Foto 7">
+                    <img src="img/hotel/colonial-8.png" alt="Foto 8">
+                    <img src="img/hotel/colonial-9.png" alt="Foto 9">
+                    <img src="img/hotel/colonial-10.png" alt="Foto 10">
+                    <img src="img/hotel/colonial-11.png" alt="Foto 11">
+                    <img src="img/hotel/colonial-12.png" alt="Foto 12">
+                    <img src="img/hotel/colonial-13.png" alt="Foto 13">
+                    <img src="img/hotel/colonial-14.png" alt="Foto 14">
+                    <img src="img/hotel/colonial-15.png" alt="Foto 15">
+                    <img src="img/hotel/colonial-16.png" alt="Foto 16">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="gray-section contact">
         <div class="container">
             <div class="row m-b-lg">
@@ -382,7 +497,7 @@
             <div class="footer-info">
                 <div class="contenedor">
                     <div class="columna horarios">
-                        <h4>Opening Hour</h4>
+                        <h4><strong>Opening Hour</strong></h4>
                         <div class="horarios-grid">
                             <div>
                                 <p><strong>Lunes</strong><br>09:00 - 23:00</p>
@@ -401,16 +516,17 @@
 
 
                     <div class="columna">
-                        <h4>Our Locations</h4>
+                        <h4><strong>Our Locations</strong></h4>
                         <p><strong>Hotel Colonial</strong><br>Miguel Hidalgo y Costilla 475, Centro, 64000
                             <br>Monterrey, N.L., México
                         </p>
                     </div>
 
                     <div class="columna">
-                        <h4>Contact Us</h4>
+                        <h4><strong>Contact Us</strong></h4>
                         <p><strong>Tel No:</strong><br>81 2968 0125<br>81 1243 0639</p>
-                        <p><strong>Email:</strong><br><span class="navy-clean">hotel@colonial.com</span></p>
+                        <p><strong>Email:</strong><br><span class="navy-clean">gerencia@hotelcolonialmty.com.mx</span>
+                        </p>
                         <p><strong>Website:</strong><br><span class="navy-clean">www.hotelcolonialmty.com</span></p>
                         <p><strong>Social:</strong></p>
                         <ul class="list-inline social-icon">
@@ -424,7 +540,7 @@
                     </div>
 
                     <div class="columna">
-                        <h4>Newsletter</h4>
+                        <h4><strong>Newsletter</strong></h4>
                         <p>Spam free, tasty event food news in your inbox.</p>
                         <form>
                             <input type="email" placeholder="Your email">
@@ -484,13 +600,63 @@
     <!-- slick carousel-->
     <script src="js/plugins/slick/slick.min.js"></script>
 
-    
+
     <!-- Additional style only for demo purpose -->
     <style>
         .slick_demo_2 .ibox-content {
             margin: 0 10px;
         }
     </style>
+
+
+    <script>
+
+        function openModal(data) {
+            document.querySelector(".titulo-habitacion").innerText = data.titulo;
+            document.querySelector(".precio-habitacion").innerText = "Desde: " + data.precio;
+            document.querySelector(".descripcion-habitacion").innerText = data.descripcion;
+
+            // Rellenar lista de detalles
+            const detallesList = document.querySelector(".detalles-habitacion");
+            detallesList.innerHTML = "";
+            data.detalles.forEach(det => {
+                const item = document.createElement("div");
+                item.classList.add("detalle-item");
+
+                // det es un objeto con icono y texto
+                const icon = document.createElement("i");
+                icon.className = det.icon; // ej: "fa-solid fa-bed"
+
+                const span = document.createElement("span");
+                span.innerText = det.texto;
+
+                item.appendChild(icon);
+                item.appendChild(span);
+                detallesList.appendChild(item);
+            });
+
+
+            // Cambiar imagen
+            document.querySelector(".modal-img-habitacion img").src = data.imagen;
+
+            // Mostrar modal
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            const modal = document.getElementById("myModal");
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
+
+
 
     <script>
         $(document).ready(function () {
@@ -879,7 +1045,7 @@
             var docElem = document.documentElement,
                 header = document.querySelector('.navbar-default'),
                 didScroll = false,
-                changeHeaderOn = 5; // scroll detected height
+                changeHeaderOn = 1; // scroll detected height
             function init() {
                 window.addEventListener('scroll', function (event) {
                     if (!didScroll) {
