@@ -109,7 +109,7 @@
                         <h1>Welcome To<br />
                             <span class="font-icon-big">Hotel Colonial</span>
                         </h1>
-                        <p class="p-carousel-caption">Un hotel es más que habitaciones, es el escenario donde la
+                        <p>Un hotel es más que habitaciones, es el escenario donde la
                             hospitalidad se transforma en recuerdos inolvidables.</p>
                         <a href="#" class="btn btn-xs btn-reserva">Explore now</a>
                     </div>
@@ -170,9 +170,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center wow zoomIn">
-                    <h1><strong>¡Una cálida bienvenida al Hotel Colonial!</strong></h1>
+                    <h1 class="font-icon"><strong>¡Una cálida bienvenida al Hotel Colonial!</strong></h1>
                     <div>
-                        <i class="testimonials-text">Comodidad, descanso y experiencias. ¿Listo para reservar tu
+                        <i class="testimonials-text font-icon">Comodidad, descanso y experiencias. ¿Listo para reservar tu
                             habitación?</i>
                     </div>
                     <a href="#" class="btn btn-xs btn-reserva"> Reserva ahora</a>
@@ -187,7 +187,7 @@
                 <div class="navy-line"></div>
 
                 <h1 class="title-landing font-pacifico">Bienvenido a Hotel Colonial</h1>
-                <h1 class="h1-contenido"><span><strong>NUESTRAS HABITACIONES</strong></span></h1>
+                <h1 class="h1-contenido font-icon"><span><strong>NUESTRAS HABITACIONES</strong></span></h1>
 
                 <div class="divider">
                     <i class="fa fa-empire"></i>
@@ -347,15 +347,15 @@
     <section class="navy-section services-coffe">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 text-center wow zoomIn">
+                <div class="col-lg-4 text-center wow zoomIn servicios-landing">
                     <i class="fa fa-child icon-size"></i>
                     <h1><strong>Apto para Niños</strong></h1>
                 </div>
-                <div class="col-lg-4 text-center wow zoomIn">
+                <div class="col-lg-4 text-center wow zoomIn servicios-landing">
                     <i class="fa fa-wifi icon-size"></i>
                     <h1><strong>WIFI</strong></h1>
                 </div>
-                <div class="col-lg-4 text-center wow zoomIn">
+                <div class="col-lg-4 text-center wow zoomIn servicios-landing">
                     <i class="fa fa-phone icon-size"></i>
                     <h1><strong>Recepción las 24h</strong></h1>
                 </div>
@@ -365,10 +365,11 @@
 
     <section class="container features">
         <div class="row">
+
             <div class="col-lg-12 text-center">
                 <div class="navy-line"></div>
                 <h1 class="title-landing font-pacifico">Listo para conseguir tu habitación</h1>
-                <h1 class="h1-contenido"><strong>RESERVA</strong></h1>
+                <h1 class="h1-contenido font-icon"><strong>RESERVA</strong></h1>
                 <div class="divider">
                     <i class="fa fa-empire"></i>
                 </div>
@@ -376,90 +377,98 @@
             </div>
 
             <div class="col-lg-12 text-center">
-                <form class="mi-formulario">
 
-                    <div class="campo">
-                        <input type="text" id="nombre" placeholder="Ingresa tu nombre">
-                    </div>
-                    <div class="campo">
-                        <input type="email" id="correo" placeholder="Ingresa tu email">
-                    </div>
-                    <div class="campo">
-                        <input type="tel" id="celular" placeholder="Ingresa tu celular">
-                    </div>
+                <div class="col-sm-4 campo">
+                    <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+                </div>
 
-                    <div class="campo">
-                        <select id="opciones" class="mi-select">
-                            <option value="" disabled selected>Personas</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                        </select>
+                <div class="col-sm-4 campo">
+                    <input type="email" id="correo" placeholder="Ingresa tu email">
+                </div>
+
+                <div class="col-sm-4 campo">
+                    <input type="tel" id="celular" placeholder="Ingresa tu celular">
+                </div>
+
+                <div class="col-sm-4 campo">
+                    <select id="opciones" class="mi-select">
+                        <option value="" disabled selected>Personas</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </div>
+
+                <div class="col-sm-4 campo" id="data_1">
+                    <div class="input-group date">
+                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text"
+                            class="form-control parchesito-fecha" value="03/04/2014">
                     </div>
+                </div>
 
-                    <div class="ibox-content form-group" id="data_1">
-                        <div class="input-group date">
-                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text"
-                                class="form-control" value="03/04/2014">
-                        </div>
-                    </div>
+                <div class="col-sm-4 campo">
+                    <select id="hora" class="mi-select">
+                        <option value="" disabled selected>Selecciona una hora</option>
+                        <option value="08:00">08:00 am</option>
+                        <option value="08:30">08:30 am</option>
+                        <option value="09:00">09:00 am</option>
+                        <option value="09:30">09:30 am</option>
+                        <option value="10:00">10:00 am</option>
+                        <option value="10:30">10:30 am</option>
+                        <option value="11:00">11:00 am</option>
+                        <option value="11:30">11:30 am</option>
+                        <option value="12:00">12:00 pm</option>
+                        <option value="12:30">12:30 pm</option>
+                        <option value="13:00">01:00 pm</option>
+                        <option value="13:30">01:30 pm</option>
+                        <option value="14:00">02:00 pm</option>
+                        <option value="14:30">02:30 pm</option>
+                        <option value="15:00">03:00 pm</option>
+                        <option value="15:30">03:30 pm</option>
+                        <option value="16:00">04:00 pm</option>
+                        <option value="16:30">04:30 pm</option>
+                        <option value="17:00">05:00 pm</option>
+                        <option value="17:30">05:30 pm</option>
+                        <option value="18:00">06:00 pm</option>
+                        <option value="18:30">06:30 pm</option>
+                        <option value="19:00">07:00 pm</option>
+                        <option value="19:30">07:30 pm</option>
+                        <option value="20:00">08:00 pm</option>
+                        <option value="20:30">08:30 pm</option>
+                        <option value="21:00">09:00 pm</option>
+                        <option value="21:30">09:30 pm</option>
+                        <option value="22:00">10:00 pm</option>
+                        <option value="22:30">10:30 pm</option>
+                        <option value="23:00">11:00 pm</option>
+                        <option value="23:30">11:30 pm</option>
+                        <option value="00:00">12:00 am</option>
+                    </select>
+                </div>
 
-                    <div class="campo">
-                        <select id="hora" class="mi-select">
-                            <option value="" disabled selected>Selecciona una hora</option>
-                            <option value="08:00">08:00 am</option>
-                            <option value="08:30">08:30 am</option>
-                            <option value="09:00">09:00 am</option>
-                            <option value="09:30">09:30 am</option>
-                            <option value="10:00">10:00 am</option>
-                            <option value="10:30">10:30 am</option>
-                            <option value="11:00">11:00 am</option>
-                            <option value="11:30">11:30 am</option>
-                            <option value="12:00">12:00 pm</option>
-                            <option value="12:30">12:30 pm</option>
-                            <option value="13:00">01:00 pm</option>
-                            <option value="13:30">01:30 pm</option>
-                            <option value="14:00">02:00 pm</option>
-                            <option value="14:30">02:30 pm</option>
-                            <option value="15:00">03:00 pm</option>
-                            <option value="15:30">03:30 pm</option>
-                            <option value="16:00">04:00 pm</option>
-                            <option value="16:30">04:30 pm</option>
-                            <option value="17:00">05:00 pm</option>
-                            <option value="17:30">05:30 pm</option>
-                            <option value="18:00">06:00 pm</option>
-                            <option value="18:30">06:30 pm</option>
-                            <option value="19:00">07:00 pm</option>
-                            <option value="19:30">07:30 pm</option>
-                            <option value="20:00">08:00 pm</option>
-                            <option value="20:30">08:30 pm</option>
-                            <option value="21:00">09:00 pm</option>
-                            <option value="21:30">09:30 pm</option>
-                            <option value="22:00">10:00 pm</option>
-                            <option value="22:30">10:30 pm</option>
-                            <option value="23:00">11:00 pm</option>
-                            <option value="23:30">11:30 pm</option>
-                            <option value="00:00">12:00 am</option>
-                        </select>
-                    </div>
+                <div class="col-lg-12 campo campo-grande">
+                    <input type="text" id="mensaje" placeholder="Ingresa tus requerimientos...">
+                </div>
 
-                    <div class="campo campo-grande">
-                        <input type="text" id="mensaje" placeholder="Ingresa tus requerimientos...">
-                    </div>
+                <a href="" class="btn btn-primary" style="margin-top: 20px;">Reservar</a>
 
-                </form>
-
-                <a href="" class="btn btn-primary">Reservar</a>
             </div>
         </div>
     </section>
 
     <section class="features">
+        <div class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1 class="title-landing font-pacifico">Explora nuestras instalaciones</h1>
+            <h1 class="h1-contenido font-icon"><strong>Colonial</strong></h1>
+            <div class="divider">
+                <i class="fa fa-empire"></i>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="galeria">
@@ -489,15 +498,16 @@
             <div class="row m-b-lg">
                 <div class="col-lg-12 text-center">
                     <div class="navy-line"></div>
-                    <h1 class="title-contacto"><strong>Contact Us</strong></h1>
+                    <h1 class="title-contacto font-icon"><strong>Contact Us</strong></h1>
                     <p class="p-servicios">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
                 </div>
             </div>
 
             <div class="footer-info">
                 <div class="contenedor">
+
                     <div class="columna horarios">
-                        <h4><strong>Opening Hour</strong></h4>
+                        <h4 class="font-icon"><strong>Opening Hour</strong></h4>
                         <div class="horarios-grid">
                             <div>
                                 <p><strong>Lunes</strong><br>09:00 - 23:00</p>
@@ -514,20 +524,19 @@
                         </div>
                     </div>
 
-
                     <div class="columna">
-                        <h4><strong>Our Locations</strong></h4>
+                        <h4 class="font-icon"><strong>Our Locations</strong></h4>
                         <p><strong>Hotel Colonial</strong><br>Miguel Hidalgo y Costilla 475, Centro, 64000
                             <br>Monterrey, N.L., México
                         </p>
                     </div>
 
                     <div class="columna">
-                        <h4><strong>Contact Us</strong></h4>
+                        <h4 class="font-icon"><strong>Contact Us</strong></h4>
                         <p><strong>Tel No:</strong><br>81 2968 0125<br>81 1243 0639</p>
-                        <p><strong>Email:</strong><br><span class="navy-clean">gerencia@hotelcolonialmty.com.mx</span>
+                        <p><strong>Email: </strong><span class="navy-clean">gerencia@hotelcolonialmty.com</span>
                         </p>
-                        <p><strong>Website:</strong><br><span class="navy-clean">www.hotelcolonialmty.com</span></p>
+                        <p><strong>Webs: </strong><span class="navy-clean">www.hotelcolonialmty.com</span></p>
                         <p><strong>Social:</strong></p>
                         <ul class="list-inline social-icon">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
@@ -540,7 +549,7 @@
                     </div>
 
                     <div class="columna">
-                        <h4><strong>Newsletter</strong></h4>
+                        <h4 class="font-icon"><strong>Newsletter</strong></h4>
                         <p>Spam free, tasty event food news in your inbox.</p>
                         <form>
                             <input type="email" placeholder="Your email">
@@ -549,6 +558,7 @@
                             </button>
                         </form>
                     </div>
+
                 </div>
             </div>
 
