@@ -8410,7 +8410,7 @@ body.landing-page {
 }
 
 .titulo-resto {
-  font-family: 'Roboto Slab', serif; 
+  font-family: 'Roboto Slab', serif;
   font-size: 36px;
   display: inline-block;
   vertical-align: middle;
@@ -8710,12 +8710,15 @@ body.landing-page {
 }
 
 .font-vibes-tittle {
-  font-family: 'Great Vibes', cursive; /* fuente decorativa */
-  font-size: 80px; /* más grande para destacar la inicial */
+  font-family: 'Great Vibes', cursive;
+  /* fuente decorativa */
+  font-size: 80px;
+  /* más grande para destacar la inicial */
   display: inline-block;
   vertical-align: middle;
   margin-right: 5px;
-  color: #A45359; /* tu color base */
+  color: #A45359;
+  /* tu color base */
 }
 
 .landing-page .carousel-caption p {
@@ -9047,7 +9050,7 @@ f .landing-page .big-icon {
 }
 
 @media (max-width: 768px) {
-  /*Responsive landing celular*/
+  /*responsive landing celular*/
 
   .landing-page .carousel-caption,
   .landing-page .carousel-caption.blank {
@@ -9087,6 +9090,22 @@ f .landing-page .big-icon {
     font-size: 56px;
     margin-bottom: 4px;
   }
+
+  .features-text-landing .h1-contenido {
+    font-size: 28px;
+    display: inline;
+    text-align: center;
+  }
+
+  .font-vibes-tittle {
+    font-size: 72px;
+  }
+
+  .titulo-resto {
+    font-size: 28px;
+    padding-bottom: 20px;
+  }
+
 
   .landing-page .carousel-caption p {
     margin-bottom: 20px;
@@ -11404,6 +11423,29 @@ body.md-skin {
 }
 
 .divider i {
+  color: #A45359;
+  font-size: 20px;
+}
+
+
+
+ .divider-landing {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 32px 4px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.divider-landing::before,
+.divider-landing::after {
+  content: "";
+  width: 200px;
+  border-bottom: 2px solid #A45359;
+}
+
+.divider-landing i {
   color: #A45359;
   font-size: 20px;
 }
