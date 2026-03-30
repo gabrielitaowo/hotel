@@ -15,6 +15,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
     <!-- Animation CSS -->
     <link href="css/animate.css" rel="stylesheet">
@@ -103,8 +104,8 @@
             <div class="row">
                 <div class="col-lg-12 text-center wow zoomIn">
                     <h1 class="font-pacifico-tittle font-icon">Habitaciones</h1>
-                    <p class="p-servicios">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    <p class="p-servicios">Nuestras habitaciones combinan elegancia y comodidad para que disfrutes una
+                        estadía inolvidable.
                     </p>
                 </div>
             </div>
@@ -116,17 +117,24 @@
             <div class="col-lg-12 text-center">
                 <div class="navy-line"></div>
 
-                <h1 class="title-landing font-pacifico">Bienvenido a Hotel Colonial</h1>
-                <h1 class="h1-contenido font-icon"><span><strong>NUESTRAS HABITACIONES</strong></span></h1>
+                <h1 class="title-landing font-pacifico">
+                    Bienvenido a Hotel Colonial
+                </h1>
+
+                <h1 class="h1-contenido font-icon">
+                    <span class="font-vibes-tittle">N</span>
+                    <span class="titulo-resto">UESTRAS </br>HABITACIONES</span>
+                </h1>
 
                 <div class="divider">
                     <i class="fa fa-empire"></i>
                 </div>
 
-                <p class="p-text-landing">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. </p>
-
+                <p class="p-text-landing">
+                    Elige tu habitación ideal y vive la experiencia Colonial.
+                </p>
                 <div class="card col-lg-4">
-                    <img class="img-responsive" src="img/hotel/habitacion-1.png" alt="Habitacion simple">
+                    <img class="img-responsive" src="img/hotel/colonial-habitacion-1.png" alt="Habitacion simple">
                     <div class="card-body" onclick='openModal({
                             titulo: "Habitación Simple",
                             precio: "$210 / Noche",
@@ -158,7 +166,7 @@
                 </div>
 
                 <div class="card col-lg-4">
-                    <img class="img-responsive" src="img/hotel/habitacion-1.png" alt="Habitacion doble">
+                    <img class="img-responsive" src="img/hotel/colonial-habitacion-2.png" alt="Habitacion doble">
                     <div class="card-body" onclick='openModal({
                             titulo: "Habitación Doble",
                             precio: "$320 / Noche",
@@ -190,7 +198,7 @@
                 </div>
 
                 <div class="card col-lg-4">
-                    <img class="img-responsive" src="img/hotel/habitacion-1.png" alt="Habitacion triple">
+                    <img class="img-responsive" src="img/hotel/colonial-habitacion-3.png" alt="Habitacion triple">
                     <div class="card-body" onclick='openModal({
                                 titulo: "Habitación Triple",
                                 precio: "$420 / Noche",
@@ -293,103 +301,106 @@
         </div>
     </section>
 
-  <section class="container features">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <div class="navy-line"></div>
-        <h1 class="title-landing font-pacifico">
-          Listo para conseguir tu habitación
-        </h1>
-        <h1 class="h1-contenido font-icon"><strong>RESERVA</strong></h1>
-        <div class="divider">
-          <i class="fa fa-empire"></i>
-        </div>
-        <p class="p-text-landing">
-          Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
-        </p>
-      </div>
+    <section class="container features">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1 class="title-landing font-pacifico">
+                    Listo para conseguir tu habitación
+                </h1>
+                <h1 class="h1-contenido font-icon">
+                    <span class="font-vibes-tittle">R</span>
+                    <span class="titulo-resto">ESERVA</span>
+                </h1>
+                <div class="divider">
+                    <i class="fa fa-empire"></i>
+                </div>
+                <p class="p-text-landing">
+                    Haz tu reserva ahora y asegura la mejor experiencia en el Hotel Colonial.
+                </p>
+            </div>
 
-      <div class="col-lg-12 text-center">
-        <div class="col-sm-4 campo">
-          <input type="text" id="nombre" placeholder="Ingresa tu nombre" />
-        </div>
+            <div class="col-lg-12 text-center">
+                <div class="col-sm-4 campo">
+                    <input type="text" id="nombre" placeholder="Ingresa tu nombre" />
+                </div>
 
-        <div class="col-sm-4 campo">
-          <input type="email" id="correo" placeholder="Ingresa tu email" />
-        </div>
+                <div class="col-sm-4 campo">
+                    <input type="email" id="correo" placeholder="Ingresa tu email" />
+                </div>
 
-        <div class="col-sm-4 campo">
-          <input type="tel" id="celular" placeholder="Ingresa tu celular" />
-        </div>
+                <div class="col-sm-4 campo">
+                    <input type="tel" id="celular" placeholder="Ingresa tu celular" />
+                </div>
 
-        <div class="col-sm-4 campo">
-          <select id="opciones" class="mi-select">
-            <option value="" disabled selected>Personas</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-          </select>
-        </div>
+                <div class="col-sm-4 campo">
+                    <select id="opciones" class="mi-select">
+                        <option value="" disabled selected>Personas</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </div>
 
-        <div class="col-sm-4 campo" id="data_1">
-          <div class="input-group date">
-            <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text"
-              class="form-control parchesito-fecha" value="03/04/2014" />
-          </div>
-        </div>
+                <div class="col-sm-4 campo" id="data_1">
+                    <div class="input-group date">
+                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text"
+                            class="form-control parchesito-fecha" value="03/04/2014" />
+                    </div>
+                </div>
 
-        <div class="col-sm-4 campo">
-          <select id="hora" class="mi-select">
-            <option value="" disabled selected>Selecciona una hora</option>
-            <option value="08:00">08:00 am</option>
-            <option value="08:30">08:30 am</option>
-            <option value="09:00">09:00 am</option>
-            <option value="09:30">09:30 am</option>
-            <option value="10:00">10:00 am</option>
-            <option value="10:30">10:30 am</option>
-            <option value="11:00">11:00 am</option>
-            <option value="11:30">11:30 am</option>
-            <option value="12:00">12:00 pm</option>
-            <option value="12:30">12:30 pm</option>
-            <option value="13:00">01:00 pm</option>
-            <option value="13:30">01:30 pm</option>
-            <option value="14:00">02:00 pm</option>
-            <option value="14:30">02:30 pm</option>
-            <option value="15:00">03:00 pm</option>
-            <option value="15:30">03:30 pm</option>
-            <option value="16:00">04:00 pm</option>
-            <option value="16:30">04:30 pm</option>
-            <option value="17:00">05:00 pm</option>
-            <option value="17:30">05:30 pm</option>
-            <option value="18:00">06:00 pm</option>
-            <option value="18:30">06:30 pm</option>
-            <option value="19:00">07:00 pm</option>
-            <option value="19:30">07:30 pm</option>
-            <option value="20:00">08:00 pm</option>
-            <option value="20:30">08:30 pm</option>
-            <option value="21:00">09:00 pm</option>
-            <option value="21:30">09:30 pm</option>
-            <option value="22:00">10:00 pm</option>
-            <option value="22:30">10:30 pm</option>
-            <option value="23:00">11:00 pm</option>
-            <option value="23:30">11:30 pm</option>
-            <option value="00:00">12:00 am</option>
-          </select>
-        </div>
+                <div class="col-sm-4 campo">
+                    <select id="hora" class="mi-select">
+                        <option value="" disabled selected>Selecciona una hora</option>
+                        <option value="08:00">08:00 am</option>
+                        <option value="08:30">08:30 am</option>
+                        <option value="09:00">09:00 am</option>
+                        <option value="09:30">09:30 am</option>
+                        <option value="10:00">10:00 am</option>
+                        <option value="10:30">10:30 am</option>
+                        <option value="11:00">11:00 am</option>
+                        <option value="11:30">11:30 am</option>
+                        <option value="12:00">12:00 pm</option>
+                        <option value="12:30">12:30 pm</option>
+                        <option value="13:00">01:00 pm</option>
+                        <option value="13:30">01:30 pm</option>
+                        <option value="14:00">02:00 pm</option>
+                        <option value="14:30">02:30 pm</option>
+                        <option value="15:00">03:00 pm</option>
+                        <option value="15:30">03:30 pm</option>
+                        <option value="16:00">04:00 pm</option>
+                        <option value="16:30">04:30 pm</option>
+                        <option value="17:00">05:00 pm</option>
+                        <option value="17:30">05:30 pm</option>
+                        <option value="18:00">06:00 pm</option>
+                        <option value="18:30">06:30 pm</option>
+                        <option value="19:00">07:00 pm</option>
+                        <option value="19:30">07:30 pm</option>
+                        <option value="20:00">08:00 pm</option>
+                        <option value="20:30">08:30 pm</option>
+                        <option value="21:00">09:00 pm</option>
+                        <option value="21:30">09:30 pm</option>
+                        <option value="22:00">10:00 pm</option>
+                        <option value="22:30">10:30 pm</option>
+                        <option value="23:00">11:00 pm</option>
+                        <option value="23:30">11:30 pm</option>
+                        <option value="00:00">12:00 am</option>
+                    </select>
+                </div>
 
-        <div class="col-lg-12 campo campo-grande">
-          <input type="text" id="mensaje" placeholder="Ingresa tus requerimientos..." />
-        </div>
+                <div class="col-lg-12 campo campo-grande">
+                    <input type="text" id="mensaje" placeholder="Ingresa tus requerimientos..." />
+                </div>
 
-        <a href="" class="btn btn-primary" style="margin-top: 20px">Reservar</a>
-      </div>
-    </div>
-  </section>
+                <a href="" class="btn btn-primary" style="margin-top: 20px">Reservar</a>
+            </div>
+        </div>
+    </section>
 
     <section class="gray-section contact">
         <div class="container">
@@ -466,13 +477,13 @@
         </div>
     </section>
 
-  <a href="https://wa.me/12345678900?text=Hola" class="float-wa" target="_blank">
-    <i class="fa fa-whatsapp" style="margin-top:16px;"></i>
-  </a>
+    <a href="https://wa.me/12345678900?text=Hola" class="float-wa" target="_blank">
+        <i class="fa fa-whatsapp" style="margin-top:16px;"></i>
+    </a>
 
 
 
-  
+
     <!-- #SCRIPT -->
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
