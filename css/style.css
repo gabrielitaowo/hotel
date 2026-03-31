@@ -8443,7 +8443,7 @@ body.landing-page {
 }
 
 .landing-page .navbar-default.navbar-scroll {
-  background-color: rgba(13, 13, 13, 0.9);
+  background-color: rgba(13, 13, 13, 0.7);
   border-color: #000;
   padding: 15px 0;
 }
@@ -8696,6 +8696,13 @@ body.landing-page {
   margin-bottom: 16px;
 }
 
+.font-vibes {
+  font-family: 'Great Vibes', cursive;
+  font-size: 40px !important;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+}
+
 .servicios .font-pacifico-tittle {
   font-size: 48px;
   color: #f5f5f5;
@@ -8717,7 +8724,6 @@ body.landing-page {
   vertical-align: middle;
   margin-right: 5px;
   color: #A45359;
-  /* tu color base */
 }
 
 .font-nosotros {
@@ -8892,7 +8898,7 @@ body.landing-page {
   padding-top: 190px;
   padding-bottom: 150px;
   background-color: #8E3F45;
-  background-image: url("../img/hotel/hotel-6.png");
+  background-image: url("../img/hotel/colonial-hotel-landing-3.JPG");
   width: 100%;
 }
 
@@ -8918,7 +8924,7 @@ body.landing-page {
   padding: 20px 0;
 }
 .landing-page .contact {
-  background-image: url("../img/hotel/hotel-5.JPG");
+  background-image: url("../img/hotel/piepag.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   margin-top: 60px;
