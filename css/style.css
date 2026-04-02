@@ -8449,7 +8449,6 @@ body.landing-page {
   padding: 15px 0;
 }
 
-
 .landing-page .navbar-default {
   background-color: transparent;
   border-color: transparent;
@@ -11410,7 +11409,7 @@ body.md-skin {
 }
 
 .icono-caracteristicas:hover {
-  background-color: #d8e9ed;
+  background-color: #E7D0D1;
   transition:
     transform 0.3s ease,
     background 0.3s ease;
@@ -11419,6 +11418,9 @@ body.md-skin {
 .icono-caracteristicas i {
   color: #A45359;
   font-size: 38px;
+}
+
+.icono-caracteristicas .move-i {
   left: -19px;
   top: -19px;
 }
