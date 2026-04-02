@@ -8398,7 +8398,7 @@ body.landing-page {
   font-weight: 200;
 }
 
-.title-landing {
+.title-landingfont-vibes-tittle {
   color: #A45359;
 }
 
@@ -8409,6 +8409,15 @@ body.landing-page {
 }
 
 .titulo-resto {
+  font-family: 'Roboto Slab', serif;
+  font-size: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: start;
+  color: #303030;
+}
+
+.titulo-servicios {
   font-family: 'Roboto Slab', serif;
   font-size: 40px;
   display: inline-block;
@@ -8702,6 +8711,7 @@ body.landing-page {
   font-size: 40px !important;
   letter-spacing: 3px;
   margin-bottom: 16px;
+  color: #A45359;
 }
 
 .servicios .font-pacifico-tittle {
@@ -8919,9 +8929,10 @@ body.landing-page {
   color: #8E3F45 !important;
 }
 
-.landing-page section{
+.landing-page section {
   padding: 20px 0;
 }
+
 .landing-page .contact {
   background-image: url("../img/hotel/piepag.jpg");
   background-position: 50% 50%;
@@ -9112,7 +9123,6 @@ body.landing-page {
 
   .features-text-landing .h1-contenido {
     font-size: 28px;
-    display: inline;
     text-align: center;
   }
 
@@ -9125,6 +9135,14 @@ body.landing-page {
     padding-bottom: 20px;
   }
 
+  .titulo-servicios {
+    font-family: 'Roboto Slab', serif;
+    font-size: 28px;
+    padding-bottom: 20px;
+    vertical-align: middle;
+    text-align: center;
+    color: #303030;
+  }
 
   .landing-page .carousel-caption p {
     margin-bottom: 20px;
@@ -9150,6 +9168,24 @@ body.landing-page {
 
   .landing-page .features-text-landing {
     margin: 60px 20px 20px 20px;
+  }
+
+  .landing-page .features-text-landing .actual-p {
+    margin: 2rem;
+    font-size: 16px;
+    font-weight: 500;
+    color: #303030;
+  }
+
+  .landing-page .features-block-landing .actual-p {
+    margin: 2rem;
+    font-size: 16px;
+    font-weight: 500;
+    color: #303030;
+  }
+
+  .features-text-landing a {
+    margin-left: 2rem;
   }
 
   .landing-page .testimonials {
@@ -9218,6 +9254,7 @@ body.landing-page {
 
   .features-block-landing .contenedor-caracteristicas .tarjeta-caracteristicas {
     text-align: center;
+    margin: 0 1rem;
   }
 
   .landing-page .navbar.navbar-scroll .navbar-brand {
@@ -9285,6 +9322,15 @@ body.landing-page {
     bottom: 24px;
     right: 24px;
   }
+
+
+  .features-block-landing .img-nosotros {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    max-width: 340px;
+    margin: 36px 12px;
+  }
+
 }
 
 @media (min-width: 992px) {
@@ -10793,13 +10839,6 @@ body.md-skin {
   margin: 8px 0;
 }
 
-.features-text-landing .actual-p {
-  margin: 3.4rem 0;
-  font-size: 16px;
-  font-weight: 500;
-  color: #303030;
-}
-
 .features-block-landing .actual-p {
   margin: 3.4rem;
   font-size: 16px;
@@ -10808,6 +10847,14 @@ body.md-skin {
   width: 90%;
 }
 
+.features-text-landing .actual-p {
+  margin: 3.4rem 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #303030;
+}
+
+
 .img-landing {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
   border-radius: 4px;
@@ -10815,7 +10862,7 @@ body.md-skin {
   margin: 120px 20px;
 }
 
-.img-nosotros{
+.img-nosotros {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
   border-radius: 4px;
   max-width: 440px;
@@ -11365,6 +11412,19 @@ body.md-skin {
   margin-top: 20px;
 }
 
+.tarjeta-servicios {
+  padding: 16px;
+  border-radius: 8px;
+  color: #A45359;
+  font-size: 28px;
+}
+
+.tarjeta-servicios h4 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #444;
+}
+
 .tarjeta-caracteristicas {
   display: flex;
   gap: 16px;
@@ -11511,9 +11571,11 @@ body.md-skin {
   font-size: 30px;
   z-index: 100;
 }
-.float-wa:focus{
+
+.float-wa:focus {
   color: #fff;
 }
+
 /* azulinho total 009393 : hover 008282 : border 008493 */
 
 /* Colonial 001C55 - 001845 - 002060 */
