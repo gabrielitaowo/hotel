@@ -33,34 +33,9 @@ url("./fonts/icofont.woff") format("woff");
   -webkit-font-smoothing: antialiased;
 }
 
-.icofont-food-basket:before
+.icofont-ui-wifi:before
 {
-  content: "\eb67";
-}
-
-.icofont-unique-idea:before
-{
-  content: "\f019";
-}
-
-.icofont-waiter:before
-{
-  content: "\ed0f";
-}
-
-.icofont-fast-food:before
-{
-  content: "\eb66";
-}
-
-.icofont-people:before
-{
-  content: "\ecf9";
-}
-
-.icofont-chef:before
-{
-  content: "\eb4e";
+  content: "\ec96";
 }
 
 .icofont-dining-table:before
@@ -68,29 +43,24 @@ url("./fonts/icofont.woff") format("woff");
   content: "\eb60";
 }
 
-.icofont-spoon-and-fork:before
+.icofont-restaurant:before
 {
-  content: "\eb92";
+  content: "\eb8c";
 }
 
-.icofont-duotone.icofont-angle-double-right:before
+.icofont-history:before
 {
-  content: "\13d0c";
+  content: "\ef46";
 }
 
-.icofont-duotone.icofont-angle-double-right:after
+.icofont-duotone.icofont-privacy:before
 {
-  content: "\13d0b";
+  content: "\13b91";
 }
 
-.icofont-duotone.icofont-angle-double-left:before
+.icofont-duotone.icofont-privacy:after
 {
-  content: "\13d03";
-}
-
-.icofont-duotone.icofont-angle-double-left:after
-{
-  content: "\13d02";
+  content: "\13b90";
 }
 
 .icofont-duotone.icofont-accessibility:before
@@ -103,14 +73,29 @@ url("./fonts/icofont.woff") format("woff");
   content: "\13ab4";
 }
 
-.icofont-restaurant:before
+.icofont-bed:before
 {
-  content: "\eb8c";
+  content: "\eeb7";
 }
 
-.icofont-speech-comments:before
+.icofont-duotone.icofont-location:before
 {
-  content: "\eff2";
+  content: "\13b57";
+}
+
+.icofont-duotone.icofont-location:after
+{
+  content: "\13b56";
+}
+
+.icofont-duotone.icofont-users:before
+{
+  content: "\13bda";
+}
+
+.icofont-duotone.icofont-users:after
+{
+  content: "\13bd9";
 }
 
 [class^="icofont-"].icofont-duotone,
