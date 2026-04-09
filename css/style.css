@@ -8452,8 +8452,7 @@ body.landing-page {
 }
 
 .landing-page .navbar-default.navbar-scroll {
-  background-color: rgba(13, 13, 13, 0.7);
-  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.8);
   border-color: #000;
   padding: 15px 0;
 }
@@ -8737,14 +8736,11 @@ body.landing-page {
 
 .font-nosotros {
   font-family: 'Great Vibes', cursive;
-  /* fuente decorativa */
   font-size: 100px;
-  /* más grande para destacar la inicial */
   display: inline-block;
   vertical-align: middle;
   margin-right: 5px;
   color: #A45359;
-  /* tu color base */
 }
 
 .landing-page .carousel-caption p {
@@ -8787,12 +8783,21 @@ body.landing-page {
   margin-bottom: 60px;
 }
 
+.landing-page .features-block-landing-right {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .landing-page .features-text {
   margin-top: 60px;
 }
 
 .landing-page .features-text-landing {
   margin: 80px 20px;
+}
+.landing-page .features-text-landing-nosotros {
+  margin: 120px 20px;
+  text-align: center;
 }
 
 .landing-page .features small {
@@ -9166,8 +9171,26 @@ body.landing-page {
     margin: 0 auto;
   }
 
+  .features-block-landing .img-landing-nosotros {
+    max-width: 300px;
+    align-items: center;
+    float: none !important;
+    margin: 0 auto;
+  }
+
+  .features-block-landing .img-landing-nosotros-margin {
+    max-width: 300px;
+    align-items: center;
+    float: none !important;
+    margin: 0 auto;
+  }
+
   .landing-page .features-text-landing {
-    margin: 60px 20px 20px 20px;
+    margin: 60px 20px 60px 20px;
+  }
+
+  .landing-page .features-text-landing-nosotros {
+    margin: 60px 20px 60px 20px;
   }
 
   .landing-page .features-text-landing .actual-p {
@@ -9323,12 +9346,17 @@ body.landing-page {
     right: 24px;
   }
 
-
   .features-block-landing .img-nosotros {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     border-radius: 4px;
     max-width: 340px;
-    margin: 36px 12px;
+    align-items: center;
+    float: none !important;
+    margin: 0 auto;
+  }
+
+  .features-text-landing .valores-lista li {
+    font-size: 18px;
   }
 
 }
@@ -10862,6 +10890,45 @@ body.md-skin {
   margin: 120px 20px;
 }
 
+.img-landing-nosotros {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  float: left;
+  margin: 20px;
+}
+
+.img-landing-nosotros-margin {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  float: left;
+  margin: 80px 20px;
+}
+
+.valores-lista {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.valores-lista li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #333;
+}
+
+.valores-lista li::before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #A45359;
+  font-size: 18px;
+}
+
+
 .img-nosotros {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
   border-radius: 4px;
@@ -11534,6 +11601,35 @@ body.md-skin {
   color: #A45359;
   font-size: 20px;
 }
+
+
+
+
+
+
+.divider-page {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  max-width: 1140px;
+}
+
+.divider-page::before,
+.divider-page::after {
+  content: "";
+  width: 1140px;
+  border-bottom: 4px dashed #A45359;
+}
+
+.divider-page i {
+  color: #A45359;
+  font-size: 20px;
+  margin: 0 3px;
+}
+
+
 
 
 
